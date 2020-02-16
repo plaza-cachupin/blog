@@ -17,10 +17,12 @@ export default function PageTemplate({ data, location, pageContext }) {
   const { next, prev } = pageContext
 
   const disqusConfig = {
-    url: location.origin + location.pathname,
+    url: `${"https://plazacachupin.es" + location.pathname}`,
     identifier: mdx.id,
     title: mdx.frontmatter.title,
   }
+
+  console.log(disqusConfig)
 
   return (
     <Layout>

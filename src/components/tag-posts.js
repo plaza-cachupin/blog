@@ -1,9 +1,8 @@
-// https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#add-tags-to-your-markdown-files
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from './layout';
 
-const Tags = ({ pageContext, data }) => {
+const TagPosts = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMdx;
   const tagHeader = `${totalCount} artículo${totalCount === 1 ? '' : 's'} 
@@ -19,20 +18,16 @@ const Tags = ({ pageContext, data }) => {
             const { slug } = node.fields;
             return (
               <li key={slug}>
-                <Link to={slug}>
-                  {title} ({date})
-                </Link>
+                <Link to={slug}>{title} ({date})</Link>
               </li>
             );
           })}
         </ul>
-        {/**<Link to="/tags">All tags</Link>  **/}
+        <Link to="/tags/">Todas las etiquetas</Link>
       </div>
     </Layout>
   );
 };
-
-export default Tags;
 
 export const pageQuery = graphql`
   query($tag: String) {
@@ -55,3 +50,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default TagPosts;

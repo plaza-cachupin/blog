@@ -33,7 +33,7 @@ class PostList extends React.Component {
           {!isLast && (
             <Link to={nextPage} rel="next">Antiguos →</Link>
           )}
-        </div>
+        </div>        
       </Layout>
     )
   }
