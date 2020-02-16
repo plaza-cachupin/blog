@@ -12,16 +12,15 @@ const Tags = ({tags}) => tags.map((tag, i) => [
     ])
 
 
-
 export default function PageTemplate({ data, location, pageContext }) {
   const { mdx } = data
   const { next, prev } = pageContext
 
   const disqusConfig = {
+    url: location.origin + location.pathname,
     identifier: mdx.id,
     title: mdx.frontmatter.title,
   }
-
 
   return (
     <Layout>
