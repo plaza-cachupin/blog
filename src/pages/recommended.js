@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <h1>Recomendamos</h1>
+    <h1>Recomendados</h1>
     <h2>Podcasts</h2>
       <ul>
         <li><a href="https://www.ivoox.com/podcast-memorias-tambor_sq_f1380545_1.html">Memorias de un tambor</a></li>

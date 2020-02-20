@@ -64,7 +64,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 const createPostListPages = (posts, createPage) => {
   const component = path.resolve("./src/components/post-list.js")
-  const postsPerPage = 5
+  const postsPerPage = 10
   const numPages = Math.ceil(posts.length / postsPerPage)
 
   // Take into account that skip and limit are passed by context to the graphql

@@ -38,22 +38,20 @@ const ContactForm = () => {
   return (
     <Layout>
       <h1>Contacta</h1>
-      <p>¿Tienes alguna sugerencia? ¿Hay algo que quieres compartir con nosotros? Puedes utilizar el formulario de abajo para contactar y hacernos llegar tu mensaje.
+      <p>¿Tienes alguna sugerencia? ¿Hay algo que quieres compartir? Puedes utilizar el formulario de abajo para contactar y hacer llegar tu mensaje.
       </p>
       <form method="post" onSubmit={handleOnSubmit}>
-        <div><label>Nombre<input type="text" name="name" id="name" /></label></div>
-        <div><label>Email<input type="email" name="email" id="email" /></label></div>
-        <div><label>Asunto<input type="text" name="subject" id="subject" /></label></div>
-        <div><label>Mensaje<textarea name="message" id="message" rows="5" /></label></div>
-        <div>
+        <div style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'column'}}>
+          <label>Nombre<input type="text" name="name" id="name"/></label>
+          <label>Email<input type="email" name="email" id="email" /></label>
+          <label>Asunto<input type="text" name="subject" id="subject" /></label>
+          <label>Mensaje<textarea name="message" id="message" rows="5" /></label>
           <button type="submit" disabled={serverState.submitting}>Enviar</button>
           <input type="reset" value="Resetea"/>
+          {serverState.status && (
+            <p className={!serverState.status.ok ? "errorMsg" : ""}>{serverState.status.msg}</p> 
+          )}
         </div>
-        {serverState.status && (
-            <p className={!serverState.status.ok ? "errorMsg" : ""}>
-            {serverState.status.msg}
-            </p>
-        )}
       </form>
     </Layout>
    )

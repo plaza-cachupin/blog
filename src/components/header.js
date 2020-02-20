@@ -16,7 +16,7 @@ export default () => (
     <ul style={{ display: `inline`, float: `right` }}>
       <ListLink to="/posts/pages">Artículos</ListLink>
       <ListLink to="/contact">Contacto</ListLink>
-      <ListLink to="/recommended">Recomendamos</ListLink>
+      <ListLink to="/recommended">Recomendados</ListLink>
       <ListLink to="/about/">Acerca</ListLink>
     </ul>
     <hr/>

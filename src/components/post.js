@@ -22,12 +22,14 @@ export default function PageTemplate({ data, location, pageContext }) {
     title: mdx.frontmatter.title,
   }
 
-  console.log(disqusConfig)
-
   return (
     <Layout>
       <h1>{mdx.frontmatter.title}</h1>
-      <div>Publicado el {mdx.frontmatter.date}. Etiquetado en <Tags tags={mdx.frontmatter.tags}/></div>
+      <div>
+        <p>
+          <b>Publicado</b> el {mdx.frontmatter.date}. <b>Etiquetado</b> en <Tags tags={mdx.frontmatter.tags}/>
+        </p>
+      </div>
       <MDXRenderer>{mdx.body}</MDXRenderer>
       <div style={{'display' : 'flex', 'justifyContent': 'space-between'}}>
         {prev && (
