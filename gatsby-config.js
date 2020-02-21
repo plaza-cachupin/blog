@@ -1,3 +1,5 @@
+const emoji = require(`remark-emoji`);
+
 module.exports = {
   siteMetadata: {
     title: `Plaza Cachupín`,
@@ -56,7 +58,13 @@ module.exports = {
         trackingId: "UA-158661063-1",
       },
     },
-    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        remarkPlugins: [emoji]
+      }
+
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -70,6 +78,7 @@ module.exports = {
         path: `${__dirname}/posts/`,
       },
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    `@pauliescanlon/gatsby-mdx-embed`
   ]
 }

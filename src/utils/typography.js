@@ -1,14 +1,15 @@
 import Typography from "typography"
 import theme from "typography-theme-twin-peaks"
 
-theme.baseFontSize = '18px' // was 19px.
+// was 19px.
+theme.baseFontSize = '18px' 
+// dont underline anchors
 theme.overrideThemeStyles = ({ rhythm }, options) => ({
-  // dont underline anchors
   'a': {
-    'text-decoration': 'none !important',
+    'background-image': 'none',
   }
 })
-const typography = new Typography(theme)
 
+const typography = new Typography(theme)
 
 export default typography
