@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-components-tag-posts-js","path":"/tags/plaza-cachupin/","result":{"data":{"allMdx":{"totalCount":1,"edges":[{"node":{"id":"6bad569f-5ecf-5946-b98a-723f4b6d1c42","fields":{"slug":"/posts/primer-articulo/"},"frontmatter":{"title":"Primer artículo","date":"viernes 21 de febrero de 2020"}}}]}},"pageContext":{"tag":"Plaza Cachupín"}}}
+{"componentChunkName":"component---src-components-tag-posts-js","path":"/tags/plaza-cachupin/","result":{"pageContext":{"tag":"Plaza Cachupín"}}}

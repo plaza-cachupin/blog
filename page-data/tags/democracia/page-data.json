@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-components-tag-posts-js","path":"/tags/democracia/","result":{"data":{"allMdx":{"totalCount":1,"edges":[{"node":{"id":"4dbe3755-7701-54ea-a154-313d378a86b1","fields":{"slug":"/posts/ellos-dicen-mierda/"},"frontmatter":{"title":"Ellos dicen mierda","date":"miércoles 19 de febrero de 2020"}}}]}},"pageContext":{"tag":"Democracia"}}}
+{"componentChunkName":"component---src-components-tag-posts-js","path":"/tags/democracia/","result":{"pageContext":{"tag":"Democracia"}}}
