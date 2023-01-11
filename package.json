@@ -26,7 +26,7 @@
     "gatsby-plugin-mdx": "^1.0.71",
     "gatsby-plugin-typography": "^2.3.22",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.50",
+    "gatsby-transformer-remark": "^5.25.1",
     "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
